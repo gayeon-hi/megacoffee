@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=divice-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> <!--뷰포트설정-->
+<title>반응형웹사이트</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--문서초기화 css-->
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!--디자인 css-->
+
+<link rel="shortcut icon" href="img/favicon/favicon.ico"> <!--즐겨찾기 단축키 설정-->
+<link rel="apple-touch-icon-precomposed" href="img/favicon/indigo-touch-icon.png"> 
+<!--아이폰이,아이패드에서 웹페이지를 바탕 화면에 링크설정-->
+
+
+<script src="js/jquery-1.9.1.min.js"></script> <!--제이쿼리 라이브러리 링크-->
+
+<!--(1) 파일 링크-->
+<link rel="stylesheet" href="js/jquery.bxslider.css"> <!--bx슬라이더 CSS 연결-->
+<script src="js/jquery.bxslider.js"></script><!--제이쿼리 bx슬라이더 파일 연결-->
+  
+  
+<!--(3) 제이쿼리 입력-->  
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,   //자동실행
+        speed : 2000,
+      });
+    });
+  </script>
+
+
+
+
+<!--제이쿼리로 모바일 버전에서 전체메뉴 아이콘 토글기능 설정 -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".menu-toggle-btn").click(function(){
+		$(".gnb").stop().slideToggle("fast");
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrap">
+  <div id="header_wrap">
+    <header id="header">
+      <h1 class="logo"><a href="index.html"><span class="blind">MEGA</span></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="sub01.html">BRAND</a></li>
+          <li><a href="sub02.html">MENU</a></li>
+          <li><a href="sub03.html">STORE</a></li>
+          <li><a href="sub04.html">NOTICE</a></li> 
+        </ul>
+      </nav>
+      <div class="sns">
+        <ul class="sns_list">
+          <li>
+            <a href="https://blog.naver.com/ekddusekddus" target="_blank">
+              <img src="../mega/img/s-images/sns_blog.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/mega.mgc.coffee.official" target="_blank">
+              <img src="../mega/img/s-images/sns_facebook.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mega.mgc.coffee_official/" target="_blank">
+              <img src="../mega/img/s-images/sns_instagram.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://smartstore.naver.com/megamgccoffee" target="_blank">
+              <img src="../mega/img/s-images/sns_smartstore.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--모바일 gnb 토글버튼메뉴-->
+      <span class="menu-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </header><!--//header-->
+  </div><!--헤더 100% 너비에 배경색 추가하기-->
+
+
+
+  <div id="brand_wrap">
+    <div id="visual_sub02"> 
+      <h1>
+        <p>MEGA MENU</p>
+        DRINK MENU<br>
+      </h1>
+    </div>
+  </div>
+    
+    
+    <!--서브페이지에 들어갈 콘텐츠(내용)의 영역-->
+    <div id="contents_subarea02">
+      <div id="container">
+        <!-- sub02 콘텐츠 시작-->    
+        <div class="new_menu">
+          <div class="text">
+            <p>YOU CAN DO THIS!</p>
+            <h3>지구인들아 힘내!</h3>
+            <div class="disc"><h4>메가MGC커피 여름시즌 2nd 신메뉴</h4></div>
+            <span>무더운 여름 일상에 지친 모든 지구인들이여!<br>
+              안드로메가급 맛과 비주얼로 쏟아진 여름시즌 신메뉴 라인업!<br>
+              지금 바로 가까운 메가MGC커피 매장에서 만나보세요!</span>
+          </div>
+          <div class="img">
+            <img src="../mega/img/s-images/new_menu.jpg" alt="">
+          </div>
+        </div>
+        <div class="menu">
+          <p>메가MGC커피의 엄선된 메뉴</p>
+          <h3>MEGA MENU</h3>
+          <span>※메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</span>
+
+          <ul class="menu_list">
+              <li><a href="#">
+                <img src="img/p-images/work01.png" alt="">
+                  <div class="list_title">지구멜론 스무디</div>
+                  <div class="list_info">Melon Smoothie</div>
+                  <div class="list_text">제철 과일 멜론과 달콤한 연유가 어우러져 지구를 형상화한 부드럽고 진한 여름시즌 한정 스무디</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/work02.png" alt="">
+                  <div class="list_title">라이트 바닐라 아몬드라떼</div>
+                  <div class="list_info">Light vanilla almond latte</div>
+                  <div class="list_text">비건 음료 아몬드브리즈와 칼로리를 낮춘 라이트 바닐라 시럽이 만나 가볍지만 부드~러워진 여름시즌 한정 라떼</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/work03.png" alt="">
+                  <div class="list_title">달달 골드키위주스</div>
+                  <div class="list_info">Gold Kiwi juice</div>
+                  <div class="list_text">상큼달콤한 프리미엄 골드키위에 밀크씨슬을 더해 일상의 활력을 선사하는 건강한 여름시즌 한정 블렌딩 주스</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/work04.png" alt="">
+                  <div class="list_title">써니 자몽 스무디</div>
+                  <div class="list_info">Sunny grapefruit smoothie</div>
+                  <div class="list_text">비타민C를 가득 머금은 시트러스 계열의 자몽, 하귤, 유자, 레몬에 레몬머틀티를 블렌딩하여 새콤달콤 시원하게 즐길 수 있는 여름시즌 한정 스무디</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/work05.png" alt="">
+                  <div class="list_title">수박 주스</div>
+                  <div class="list_info">Watermelon Juice</div>
+                  <div class="list_text">돌아온 여름시즌 베스트셀러! 달달하고 시원한 메가MGC커피 만의 수박주스</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/work06.png" alt="">
+                  <div class="list_title">방랑자! 하이볼 에이드랑 함 날아?</div>
+                  <div class="list_info">Hey Wanderer! Down to Fly with Highball Ade?</div>
+                  <div class="list_text">이게 월클이 느끼는 무게의 맛인가.. 자꾸 생각나는 초특급 시원함의 무알콜 하이볼 에이드! 달콤 씁쓸 강렬한 원신 한정판 음료</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/work07.png" alt="">
+                  <div class="list_title">온 세상이 수메르! 초코젤라또 녹차라떼</div>
+                  <div class="list_info">Sumeru unlocked! Choco-gelato Green Tea Latte</div>
+                  <div class="list_text">온 세상이 원신! 지혜의 숲 수메르에서 만나는 녹차라떼! 제주산 고품질 녹차와 달콤쫀득한 초코젤라또, 쌉싸름한 블렌딩 커피가 어우러진 원신 한정판 음료</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu08.jpg" alt="">
+                  <div class="list_title">오이오이 라임 오히또</div>
+                  <div class="list_info">Cucumber-Lime Mojito</div>
+                  <div class="list_text">청량한 오이의 향과 상큼한 라임, 애플민트가 어우러진 수분 충전! 대체당을 이용한 저칼로리 여름시즌 한정 메뉴</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu09.jpg" alt="">
+                  <div class="list_title">왕메가초코</div>
+                  <div class="list_info">32oz MEGA Chocolate</div>
+                  <div class="list_text">부드러운 우유에 진한 초코소스가 어우러져 달콤하게 입맛을 깨우는 왕 메가 사이즈 초코음료</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu10.jpg" alt="">
+                  <div class="list_title">왕메가아이스티</div>
+                  <div class="list_info">32oz MEGA Peach Iced Tea</div>
+                  <div class="list_text">깊은 맛의 홍차와 달콤한 복숭아의 은은한 향이 어우러진 왕 메가 사이즈 아이스티</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu11.jpg" alt="">
+                  <div class="list_title">제로 복숭아 아이스티</div>
+                  <div class="list_info">ZERO Sugar Peach Iced Tea</div>
+                  <div class="list_text">깊게 우려진 홍차와 은은한 복숭아향의 아이스티를 제로슈가, 제로칼로리로 즐길 수 있는 음료
+                    *대체당(알룰로스,에리스리톨)을 과도하게 섭취 시 개인에 따라 복통 및 설사 등을 유발 할 수 있으니 주의하세요.</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu12.jpg" alt="">
+                  <div class="list_title">연유라떼</div>
+                  <div class="list_info">Condensed Milk Latte</div>
+                  <div class="list_text">향기로운 에스프레소 샷, 부드러운 우유 그리고 달콤한 연유가 조화롭게 어우러진 라떼</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu13.jpg" alt="">
+                  <div class="list_title">골드망고스무디</div>
+                  <div class="list_info">Gold Mango Smoothie</div>
+                  <div class="list_text">황금빛 골드망고가 진하게 느껴지는 부드럽고 상큼 달콤한 스무디</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu14.jpg" alt="">
+                  <div class="list_title">딸기라떼</div>
+                  <div class="list_info">Strawberry Latte</div>
+                  <div class="list_text">딸기과육이 풍부히 느껴지는 스테디 셀러 산뜻하고 달콤한 딸기가 가득해 부드러운 우유와 어우러져 더욱 기분 좋게 즐기는 아이스 라떼</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu15.jpg" alt="">
+                  <div class="list_title">할메가커피</div>
+                  <div class="list_info">MEGA Mix Coffee</div>
+                  <div class="list_text">우리 할머니께서 즐겨드시던 달달한 믹스 커피 스타일로 만든 메가MGC커피만의 시원한 커피 음료</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu16.jpg" alt="">
+                  <div class="list_title">왕할메가커피</div>
+                  <div class="list_info">BIG MEGA Mix Coffee</div>
+                  <div class="list_text">우리 할머니께서 즐겨드시던 달달한 믹스 커피 스타일로 만든 메가MGC커피만의 메가사이즈 커피 음료</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu17.jpg" alt="">
+                  <div class="list_title">코코넛 커피 스무디</div>
+                  <div class="list_info">Coconut Coffee Smoothie</div>
+                  <div class="list_text">바삭하고 고소한 코코넛 칩을 올리고 쌉싸름한 커피와 달콤한 코코넛이 조화로운 스무디</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu18.jpg" alt="">
+                  <div class="list_title">레드오렌지자몽주스</div>
+                  <div class="list_info">Red Orange-Grapefruit Juice</div>
+                  <div class="list_text">엄선된 시칠리아 레드오렌지와 자몽이 만난 상큼한 주스에 프로바이오틱스를 더해 건강한 블렌딩 주스</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu19.jpg" alt="">
+                  <div class="list_title">샤인머스캣그린주스</div>
+                  <div class="list_info">Shine Muscat-Kale Juice</div>
+                  <div class="list_text">달콤한 샤인머스캣과 케일이 만난 싱그러운 주스에 칼슘을 더해 건강한 블렌딩 주스</div>
+              </a></li>
+              <li><a href="#">
+                <img src="img/p-images/menu20.jpg" alt="">
+                  <div class="list_title">딸기주스</div>
+                  <div class="list_info">Strawberry Juice</div>
+                  <div class="list_text">새콤달콤한 딸기주스에 피쉬 콜라겐을 더해 건강한 블렌딩 주스</div>
+              </a></li>
+            </li>
+          </ul>
+        </div>
+        <!-- sub02 콘텐츠 끝--> 
+	    </div><!--//container-->
+	  </div><!--//contents_subarea-->
+    
+    
+    
+    
+    <footer id="footer">
+      <div class="footer_wrap">
+  
+          <div class="footer_inner">
+              <div class="text">
+                  <h1 class="f_logo"><img  src="../mega/img/s-images/logo_footer.png" alt=""></h1>
+                  <ul class="sns_list">
+                      <li>
+                          <a href="https://blog.naver.com/ekddusekddus" target="_blank">
+                              <img src="../mega/img/s-images/sns_blog.png">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com/mega.mgc.coffee.official" target="_blank">
+                              <img src="../mega/img/s-images/sns_facebook.png">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.instagram.com/mega.mgc.coffee_official/" target="_blank">
+                              <img src="../mega/img/s-images/sns_instagram.png">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://smartstore.naver.com/megamgccoffee" target="_blank">
+                              <img src="../mega/img/s-images/sns_smartstore.png">
+                          </a>
+                      </li>
+                      <!-- <li> -->
+                          <!-- <a href="/manager/" target="_blank"> -->
+                              <!-- <img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_mng.png"> -->
+                              <!-- <span>점주님전용</span> -->
+                          <!-- </a> -->
+                      <!-- </li> -->
+                  </ul>
+              </div>
+              <div class="address">
+                  <ul class="info">
+                      <li>주식회사 앤하우스</li>
+                      <li>대표자 김대영</li>
+                      <li>창업상담 1588-0656</li>
+                      <li>고객센터 1588-8298</li>
+                      <li>FAX 02-325-5199</li>
+                      <li>사업자등록번호 105-87-51367</li>
+                      <li>서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스</li>
+                      <li>개인정보보호 책임자 이종원</li>
+                  </ul>
+              </div>
+          </div>
+      </div>  
+  </footer><!--//footer-->
+</div><!--//wrap-->
+</body>
+</html>

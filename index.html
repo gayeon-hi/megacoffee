@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> <!--뷰포트설정-->
+<title>MEGA</title>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--문서초기화 css-->
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!--디자인 css-->
+
+<link rel="shortcut icon" href="img/favicon/favicon.ico"> <!--즐겨찾기 단축키 설정-->
+<link rel="apple-touch-icon-precomposed" href="img/favicon/indigo-touch-icon.png"> 
+<!--아이폰이,아이패드에서 웹페이지를 바탕 화면에 링크설정-->
+
+<script src="js/jquery-1.9.1.min.js"></script> <!--제이쿼리 라이브러리 링크-->
+
+<!--(1) 파일 링크-->
+<link rel="stylesheet" href="js/jquery.bxslider.css"> <!--bx슬라이더 CSS 연결-->
+<script src="js/jquery.bxslider.js"></script><!--제이쿼리 bx슬라이더 파일 연결-->
+
+<!--(3) 제이쿼리 입력-->  
+<script>
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+      auto: true,   //자동실행
+      speed : 2000,
+    });
+  });
+</script>
+
+<!--제이쿼리로 모바일 버전에서 전체메뉴 아이콘 토글기능 설정 -->
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".menu-toggle-btn").click(function(){
+    $(".gnb").stop().slideToggle("fast");
+  });
+});
+</script>
+
+</head>
+
+<body>  
+<div id="wrap">
+  <div id="header_wrap">
+    <header id="header">
+      <h1 class="logo"><a href="index.html"><span class="blind">MEGA</span></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="sub01.html">BRAND</a></li>
+          <li><a href="sub02.html">MENU</a></li>
+          <li><a href="sub03.html">STORE</a></li>
+          <li><a href="sub04.html">NOTICE</a></li> 
+        </ul>
+      </nav>
+      <div class="sns">
+        <ul class="sns_list">
+          <li>
+            <a href="https://blog.naver.com/ekddusekddus" target="_blank">
+              <img src="../mega/img/s-images/sns_blog.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/mega.mgc.coffee.official" target="_blank">
+              <img src="../mega/img/s-images/sns_facebook.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mega.mgc.coffee_official/" target="_blank">
+              <img src="../mega/img/s-images/sns_instagram.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://smartstore.naver.com/megamgccoffee" target="_blank">
+              <img src="../mega/img/s-images/sns_smartstore.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--모바일 gnb 토글버튼메뉴-->
+      <span class="menu-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </header><!--//header-->
+  </div><!--헤더 100% 너비에 배경색 추가하기-->    
+
+  <div id="slidervisual">
+    <div class="slider">
+      <div><img src="img/p-images/visual01.jpg" alt=""></div>
+      <div><img src="img/p-images/visual02.jpg" alt=""></div>
+      <div><img src="img/p-images/visual03.jpg" alt=""></div>
+    </div>
+  </div><!--//slider-->
+
+  <div id="contents">
+    <section id="display">
+      <div id="container">
+        <p>메가MGC커피 이야기</p>
+        <h2 class="sec_title">MEGA SIZE <span class="bg">& 2 SHOT</span></h2>
+      </div>  
+    </section><!--//display-->
+
+    <section id="promotion">
+      <div id="container">
+        <ul class="promo_list">
+          <li><a href="#">
+            <img src="img/s-images/icon01.png" alt="">
+            <h3>Coffee</h3>
+          </a></li>
+          
+          <li><a href="#">
+            <img src="img/s-images/icon02.png" alt="">
+            <h3>Beverage</h3>
+          </a></li>
+
+          <li><a href="#">
+            <img src="img/s-images/icon03.png" alt="">
+            <h3>Tea</h3>
+          </a></li>
+
+          <li><a href="#">
+            <img src="img/s-images/icon04.png" alt="">
+            <h3>Juice</h3>
+          </a></li>
+
+          <li><a href="#">
+            <img src="img/s-images/icon05.png" alt="">
+            <h3>Ade</h3>
+          </a></li>
+
+          <li><a href="#">
+            <img src="img/s-images/icon06.png" alt="">
+            <h3>Smoothie&Frappe</h3>
+          </a></li>
+        </ul>
+      </div>
+    </section><!--//promotion-->
+
+    <section id="work">
+      <h3 class="sec_title">NEW</h3>
+      <div class="work_wrap">
+        <ul class="work-list">
+          <li><a href="#">
+            <div class="info">
+              <h3>지구멜론 스무디</h3>
+              <span>Melon Smoothie</span>
+            </div>
+            <img src="img/p-images/work01.png" alt="">
+          </a></li>
+
+          <li><a href="#">
+            <div class="info">
+              <h3>라이트 바닐라 아몬드라떼</h3>
+              <span>Light vanilla almond latte</span>
+            </div>
+            <img src="img/p-images/work02.png" alt="">
+          </a></li>
+
+          <li><a href="#">
+            <div class="info">
+              <h3>달달 골드키위주스</h3>
+              <span>Gold Kiwi Juice</span>
+            </div>
+            <img src="img/p-images/work03.png" alt="">
+          </a></li>
+
+          <li><a href="#">
+            <div class="info">
+              <h3>써니 자몽 스무디</h3>
+              <span>Sunny Grapefruit Smoothie</span>
+            </div>
+            <img src="img/p-images/work04.png" alt="">
+          </a></li>
+          <!--//row1-->
+
+          <li><a href="#">
+            <div class="info">
+              <h3>수박 주스</h3>
+              <span>Watermelon Juice</span>
+            </div>
+            <img src="img/p-images/work05.png" alt="">
+          </a></li>
+
+          <li><a href="#">
+            <div class="info">
+              <h3>방랑자!<br>하이볼 에이드랑 함 날아?</h3>
+              <span>Hey Wanderer! Down To Fly With Highball Ade?</span>
+            </div>
+            <img src="img/p-images/work06.png" alt="">
+          </a></li>
+
+          <li><a href="#">
+            <div class="info">
+              <h3>온 세상이 수메르!<br>초코젤라또 녹차라떼</h3>
+              <span>Sumeru Unlocked! Choco-Gelato Green Tea Latte</span>
+            </div>
+            <img src="img/p-images/work07.png" alt="">
+          </a></li>
+
+          <li><a href="#">
+            <div class="info">
+              <h3>구름 위 동화 고양이 소다 컵빙수</h3>
+              <span>Cloudy With A Fairytale Cat Soda Bingsu</span>
+            </div>
+            <img src="img/p-images/work08.png" alt="">
+          </a></li>
+          <!--//row2-->
+        </ul>
+      </div>        
+    </section><!--//work-->
+
+    <section id="blog">
+      <div id="container">
+        <h2 class="sec_title">SNS</h2>
+        <ul class="blog-list">
+          <li><a href="#"><img src="img/p-images/blog01.jpg" alt=""></a>
+            <time datetime="2024-07-25">July 25, 2024</time>
+            <a href="#"><h3>메가MGC커피X원신 콜라보 출시 기념 이벤트</h3></a>
+          </li>
+
+          <li><a href="#"><img src="img/p-images/blog02.jpg" alt=""></a>
+            <time datetime="2024-07-08">July 08, 2024</time>
+            <a href="#"><h3>네이버페이 포인트·머니로 3천원 이상 결제 시 500원 바로적립</h3></a>
+          </li>
+
+          <li><a href="#"><img src="img/p-images/blog03.jpg" alt=""></a>
+            <time datetime="2024-07-04">July 04, 2024</time>
+            <a href="#"><h3>여름시즌 출시기념 이벤트 _지구인들아 힘내!</h3></a>
+          </li>
+        </ul>
+        <ul class="blog-list">
+          <li><a href="#"><img src="img/p-images/blog04.jpg" alt=""></a>
+            <time datetime="2024-06-25">June 25, 2024</time>
+            <a href="#"><h3>7월 메가MGC커피 X 신한 SOL페이 적립 EVENT</h3></a>
+          </li>
+
+          <li><a href="#"><img src="img/p-images/blog05.jpg" alt=""></a>
+            <time datetime="2024-06-25">June 25, 2024</time>
+            <a href="#"><h3>7월 메가MGC커피 X 하나페이 적립 EVENT (메가오더 전용 혜택)</h3></a>
+          </li>
+
+          <li><a href="#"><img src="img/p-images/blog06.jpg" alt=""></a>
+            <time datetime="2024-04-26">April 26, 2024</time>
+            <a href="#"><h3>LG U+ 구독서비스 '유독 Pick2'</h3></a>
+          </li>
+        </ul>
+      </div>
+    </section><!--//blog-->
+  </div><!--//contents-->
+
+  
+  <footer id="footer">
+    <div class="iframe_wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9779896246655!2d127.02054697688506!3d37.508437272053676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e0b835b529%3A0x58fea931f2c15acc!2z7JWk7ZWY7Jqw7Iqk!5e0!3m2!1sko!2sus!4v1722395722564!5m2!1sko!2sus" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+
+    <div class="footer_wrap">
+
+        <div class="footer_inner">
+            <div class="text">
+                <h1 class="f_logo"><img  src="../mega/img/s-images/logo_footer.png" alt=""></h1>
+                <ul class="sns_list">
+                    <li>
+                        <a href="https://blog.naver.com/ekddusekddus" target="_blank">
+                            <img src="../mega/img/s-images/sns_blog.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mega.mgc.coffee.official" target="_blank">
+                            <img src="../mega/img/s-images/sns_facebook.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mega.mgc.coffee_official/" target="_blank">
+                            <img src="../mega/img/s-images/sns_instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://smartstore.naver.com/megamgccoffee" target="_blank">
+                            <img src="../mega/img/s-images/sns_smartstore.png">
+                        </a>
+                    </li>
+                    <!-- <li> -->
+                        <!-- <a href="/manager/" target="_blank"> -->
+                            <!-- <img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_mng.png"> -->
+                            <!-- <span>점주님전용</span> -->
+                        <!-- </a> -->
+                    <!-- </li> -->
+                </ul>
+            </div>
+            <div class="address">
+                <ul class="info">
+                    <li>주식회사 앤하우스</li>
+                    <li>대표자 김대영</li>
+                    <li>창업상담 1588-0656</li>
+                    <li>고객센터 1588-8298</li>
+                    <li>FAX 02-325-5199</li>
+                    <li>사업자등록번호 105-87-51367</li>
+                    <li>서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스</li>
+                    <li>개인정보보호 책임자 이종원</li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+</footer><!--//footer-->
+</div><!--//wrap-->
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=divice-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> <!--뷰포트설정-->
+<title>반응형웹 사이트</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--문서초기화 css-->
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!--디자인 css-->
+
+<link rel="shortcut icon" href="img/favicon/favicon.ico"> <!--즐겨찾기 단축키 설정-->
+<link rel="apple-touch-icon-precomposed" href="img/favicon/indigo-touch-icon.png"> 
+<!--아이폰이,아이패드에서 웹페이지를 바탕 화면에 링크설정-->
+
+
+<script src="js/jquery-1.9.1.min.js"></script> <!--제이쿼리 라이브러리 링크-->
+
+<!--(1) 파일 링크-->
+<link rel="stylesheet" href="js/jquery.bxslider.css"> <!--bx슬라이더 CSS 연결-->
+<script src="js/jquery.bxslider.js"></script><!--제이쿼리 bx슬라이더 파일 연결-->
+  
+  
+<!--(3) 제이쿼리 입력-->  
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,   //자동실행
+        speed : 2000,
+      });
+    });
+  </script>
+
+
+
+
+<!--제이쿼리로 모바일 버전에서 전체메뉴 아이콘 토글기능 설정 -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".menu-toggle-btn").click(function(){
+		$(".gnb").stop().slideToggle("fast");
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrap">
+  <div id="header_wrap">
+    <header id="header">
+      <h1 class="logo"><a href="index.html"><span class="blind">MEGA</span></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="sub01.html">BRAND</a></li>
+          <li><a href="sub02.html">MENU</a></li>
+          <li><a href="sub03.html">STORE</a></li>
+          <li><a href="sub04.html">NOTICE</a></li> 
+        </ul>
+      </nav>
+      <div class="sns">
+        <ul class="sns_list">
+          <li>
+            <a href="https://blog.naver.com/ekddusekddus" target="_blank">
+              <img src="../mega/img/s-images/sns_blog.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/mega.mgc.coffee.official" target="_blank">
+              <img src="../mega/img/s-images/sns_facebook.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mega.mgc.coffee_official/" target="_blank">
+              <img src="../mega/img/s-images/sns_instagram.png">
+            </a>
+          </li>
+          <li>
+            <a href="https://smartstore.naver.com/megamgccoffee" target="_blank">
+              <img src="../mega/img/s-images/sns_smartstore.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--모바일 gnb 토글버튼메뉴-->
+      <span class="menu-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </header><!--//header-->
+  </div><!--헤더 100% 너비에 배경색 추가하기-->      
+    
+  <div id="brand_wrap">
+    <div id="visual_sub04"> 
+      <h1>
+        <p>MEGA NEWS</p>
+        MEGA NOTICE<br>
+      </h1>
+    </div>
+  </div>
+    
+    
+    
+    <!--서브페이지에 들어갈 콘텐츠(내용)의 영역-->
+    <div id="contents_subarea04">
+      <div id="container"> 
+        <!-- sub04 콘텐츠 시작-->    
+        
+        
+        
+        
+        
+        
+        <!-- sub04 콘텐츠 끝--> 
+      </div><!--//container-->
+	  </div><!--//contents_subarea-->
+    
+    
+    <footer id="footer">
+      <div class="footer_wrap">
+  
+          <div class="footer_inner">
+              <div class="text">
+                  <h1 class="f_logo"><img  src="../mega/img/s-images/logo_footer.png" alt=""></h1>
+                  <ul class="sns_list">
+                      <li>
+                          <a href="https://blog.naver.com/ekddusekddus" target="_blank">
+                              <img src="../mega/img/s-images/sns_blog.png">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com/mega.mgc.coffee.official" target="_blank">
+                              <img src="../mega/img/s-images/sns_facebook.png">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.instagram.com/mega.mgc.coffee_official/" target="_blank">
+                              <img src="../mega/img/s-images/sns_instagram.png">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://smartstore.naver.com/megamgccoffee" target="_blank">
+                              <img src="../mega/img/s-images/sns_smartstore.png">
+                          </a>
+                      </li>
+                      <!-- <li> -->
+                          <!-- <a href="/manager/" target="_blank"> -->
+                              <!-- <img src="https://img.79plus.co.kr/megahp/common/img/sns/sns_mng.png"> -->
+                              <!-- <span>점주님전용</span> -->
+                          <!-- </a> -->
+                      <!-- </li> -->
+                  </ul>
+              </div>
+              <div class="address">
+                  <ul class="info">
+                      <li>주식회사 앤하우스</li>
+                      <li>대표자 김대영</li>
+                      <li>창업상담 1588-0656</li>
+                      <li>고객센터 1588-8298</li>
+                      <li>FAX 02-325-5199</li>
+                      <li>사업자등록번호 105-87-51367</li>
+                      <li>서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스</li>
+                      <li>개인정보보호 책임자 이종원</li>
+                  </ul>
+              </div>
+          </div>
+      </div>  
+  </footer><!--//footer-->
+</div><!--//wrap-->
+</body>
+</html>
